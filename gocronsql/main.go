@@ -167,6 +167,7 @@ fmt.Println(err2)
 func runCronJobs(db *sql.DB) {
  // 3
  s := gocron.NewScheduler(time.UTC)
+ 
 
  // 4
  s.Every(20).Minutes().Do(func() {
